@@ -1,8 +1,8 @@
 import { StyleSheet, View, Text, FlatList } from "react-native";
-function GoalItem() {
+function GoalItem(props) {
   return (
     <View style={styles.goalItem}>
-      <Text style={styles.goalsText}>{itemData.item.text}</Text>
+      <Text style={styles.goalsText}>{props.text}</Text>
     </View>
   );
 }
